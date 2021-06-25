@@ -129,10 +129,6 @@ body { padding: 0; margin: 0; height: 100%; width: 100%; background: var(--backg
 
 @media (min-width: 1200px) { .container { width: 1170px; } }
 
-.item { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-
-.style { display: inline-block; position: absolute; right: .5rem; z-index: -1; }
-
 .no-scroll { overflow: hidden; }
 
 #preloader { height: 100vh; width: 100vw; top: 0; left: 0; right: 0; bottom: 0; background: #fdfcdc; overflow: hidden; position: fixed; -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1); transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1); z-index: 100; }
@@ -170,6 +166,10 @@ figure ul { padding: 0; }
 .works-list li { position: relative; border-top: 1px solid var(--rgba-title-color); }
 
 .works-list li:last-child { border-bottom: 1px solid var(--rgba-title-color); }
+
+.works-list li.item--star { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.works-list li .item--star__icon { display: inline-block; position: absolute; right: .5rem; z-index: -1; }
 
 .works-list li a { display: block; width: 100%; padding: 1rem .5rem; font-size: 2rem; font-weight: 900; font-style: italic; line-height: 1.7; -webkit-text-stroke: 1px var(--title-color); -webkit-text-fill-color: transparent; letter-spacing: 1px; -webkit-transition: all 0.15s cubic-bezier(0.05, 0.03, 0.35, 1); transition: all 0.15s cubic-bezier(0.05, 0.03, 0.35, 1); }
 

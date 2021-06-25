@@ -1,0 +1,117 @@
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .header {
+        &-menu {
+            font-size: 14px;
+            white-space: nowrap;
+        }
+        .menu {
+            li {
+                margin: 0 10px;
+            }
+        }
+        .logo {
+            max-width: 100px;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+    .btn {
+        padding: 14px 30px;
+    }
+
+    .header {
+        &-btn {
+            a + button { margin-left: 0px; }
+        }
+        .login { display: none; }
+    }
+
+    .item {
+        flex-direction: column;
+        margin-bottom: 30px;
+        padding: 40px 0;
+        &__img {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        &__title {
+            font-size: 24px;
+        }
+        &.item--reverse {
+            flex-direction: column;
+            .item__img {
+                margin: 0 auto;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    section {
+        &.advantages::before {
+            left: 30px;
+            top: -100px;
+        }
+    }
+
+    .header {
+        &-menu {
+            // font-size: 14px;
+            margin-bottom: 30px;
+        }
+        .menu {
+            display: none;
+        }
+        .logo {
+            max-width: 80px;
+        }
+    }
+
+    .footer {
+        &-content {
+            flex-direction: column-reverse;
+        }
+        .menu {
+            margin-bottom: 0;
+        }
+        .copyright {
+            text-align: center;
+            font-size: 12px;
+            line-height: 1.5rem;
+        }
+    }
+
+    .heading {
+        max-width: 370px;
+        margin-bottom: 120px;
+        &__title {
+            font-size: 1.7rem;
+        }
+        &__text {
+            font-size: 14px;
+        }
+    }
+
+    .about-list {
+        padding: 0 2rem;
+        border-radius: 30px;
+    }
+
+    .join-us {
+        margin-bottom: 70px;
+        &__title {
+            font-size: 22px;
+            line-height: 1.4;
+        }
+        & svg {
+            height: 100px;
+            margin: 25px 0;
+        }
+    }
+
+}

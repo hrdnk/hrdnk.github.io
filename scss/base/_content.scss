@@ -2,33 +2,6 @@
 // CONTENT PART
 
 
-// Star on list works list
-
-.item {
-  display: flex;
-  justify-content:space-between;
-  align-items: center;
-}
-
-.style {
-  display: inline-block;
-  position: absolute;
-  right: .5rem;
-  // top: 0;
-  // -webkit-transform: rotate(30deg);
-  // transform: rotate(30deg);
-  // background: rgb(0, 0, 0);
-  // text-transform: lowercase;
-  // padding: 0 5px;
-  // color: var(--cv-button);
-  // font-weight: 500;
-  // font-style: normal;
-  // font-size: .7rem;
-  z-index: -1;
-}
-
-
-
 // preloader styles --dependencies gsap_animation.js
 
 .no-scroll {
@@ -168,6 +141,22 @@ figure {
       position: relative;
       border-top: 1px solid var(--rgba-title-color);
       &:last-child { border-bottom: 1px solid var(--rgba-title-color); }
+
+      // Star on list works list
+
+      &.item--star {
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+      }
+
+      .item--star__icon {
+        display: inline-block;
+        position: absolute;
+        right: .5rem;
+        z-index: -1;
+      }
+
       a {
         display: block;
         width: 100%;
