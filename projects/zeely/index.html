@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,11 +12,9 @@
     
     <section class="begin">
 
-        <div class="begin-hello">
-            <h1 class="title">Продавай online с Zeely</h1>
-            <h2 class="subtitle">Создай продающий сайт для своего бизнеса и запусти эффективную рекламу в несколько шагов</h2>
-            <a class="btn--start">Начать</a>
-        </div>
+        <h1 class="title">Продавай online с Zeely</h1>
+        <h2 class="subtitle">Создай продающий сайт для своего бизнеса и запусти эффективную рекламу в несколько шагов</h2>
+        <a class="btn--start" id="start">Начать</a>
 
         <div class="helper">
             <p class="helper__text">
@@ -35,27 +33,23 @@
             <progress max="100" value="0" class="progress-line"></progress>
             <progress max="100" value="0" class="progress-line"></progress>
         </div>
-        <form action="" class="">
-            <h3 class="multi-step__title">Как мы можем к тебе обращаться?</h3>
+
+        <form action="" class="class" id="step1">
+            <div class="multi-step__text">
+                <h3 class="multi-step__title">Как мы можем к тебе обращаться?</h3>
+            </div>
             <div class="form-field">
                 <input type="text" required="required"/><span class="highlight"></span><span class="bar"></span>
                 <label>Твое имя</label>
             </div>
             <a class="btn btn--disable">Далее</a>
         </form>
-    </section>
 
-    <section class="brt-15 mt-2 multi-step">
-        <div class="progress-bar">
-            <progress max="100" value="100" class="progress-line"></progress>
-            <progress max="100" value="0" class="progress-line"></progress>
-            <progress max="100" value="0" class="progress-line"></progress>
-            <progress max="100" value="0" class="progress-line"></progress>
-            <progress max="100" value="0" class="progress-line"></progress>
-        </div>
-        <form action="" class="">
-            <h3 class="multi-step__title text-left ml-1">Регистрация</h3>
-            <p class="multi-step__subtitle">Укажи свой номер телефона и ожидай SMS</p>
+        <form action="" class="class" id="step2">
+            <div class="multi-step__text">
+                <h3 class="multi-step__title">Регистрация</h3>
+                <p class="multi-step__subtitle">Укажи свой номер телефона и ожидай SMS</p>
+            </div>
             <div class="form-field" style="display: flex; align-items: center;">
                 <span class="flag__icon">
                     <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -86,12 +80,22 @@
             </div>
             <a class="btn btn--disable">Далее</a>
         </form>
+
     </section>
+
+    <!-- <section class="brt-15 mt-2 multi-step">
+        <div class="progress-bar">
+            <progress max="100" value="" class="progress-line"></progress>
+            <progress max="100" value="0" class="progress-line"></progress>
+            <progress max="100" value="0" class="progress-line"></progress>
+            <progress max="100" value="0" class="progress-line"></progress>
+            <progress max="100" value="0" class="progress-line"></progress>
+        </div>
+    </section> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/script.js"></script>
-
 
 </body>
 </html>

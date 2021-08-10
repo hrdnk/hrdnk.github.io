@@ -364,6 +364,9 @@ body {
   max-width: 414px;
   background: #8FA4B2;
   margin: 0 auto;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
   font-family: 'Gotham Pro', 'Arial', 'Helvetica', sans-serif;
   font-weight: normal;
   font-style: normal;
@@ -374,6 +377,12 @@ body {
   scroll-behavior: smooth;
   overflow-y: auto;
   overflow-x: hidden;
+}
+
+#step1,
+#step2,
+.multi-step {
+  display: none;
 }
 
 .bg-purple {
@@ -396,7 +405,7 @@ body {
   border-radius: 15px 15px 0 0;
 }
 
-.begin-hello {
+.begin {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -409,7 +418,7 @@ body {
           justify-content: flex-end;
   padding: 16px;
   text-align: center;
-  min-height: 752px;
+  min-height: 100vh;
   background-image: url("../img/screen.png");
   background-position: center;
   background-size: cover;
@@ -424,7 +433,7 @@ body {
 }
 
 .begin .subtitle {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 13px;
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 15px;
@@ -451,7 +460,6 @@ body {
   padding-bottom: 16px;
   font-size: 14px;
   color: #fff;
-  background: #000;
   text-align: center;
 }
 
@@ -469,11 +477,15 @@ body {
   height: calc(100vh - 82px);
 }
 
+.multi-step__text {
+  padding: 0 40px;
+}
+
 .multi-step__title {
   display: block;
   color: #172026;
+  font-size: 16px;
   font-weight: 500;
-  text-align: center;
   margin-bottom: 20px;
 }
 
@@ -483,7 +495,6 @@ body {
 
 .multi-step__subtitle {
   font-size: 13px;
-  padding: 0 40px;
 }
 
 .progress-bar {
@@ -566,6 +577,23 @@ textarea {
   font-size: 13;
   padding: 0;
   padding-left: 20px;
+  color: #172026;
+}
+
+.simple-input::-webkit-input-placeholder {
+  color: #172026;
+}
+
+.simple-input:-ms-input-placeholder {
+  color: #172026;
+}
+
+.simple-input::-ms-input-placeholder {
+  color: #172026;
+}
+
+.simple-input::placeholder {
+  color: #172026;
 }
 
 input,
@@ -616,12 +644,12 @@ label {
 }
 
 .nice-select {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   background-color: #fff;
   border-bottom: solid 1px #D7E0E7;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   clear: both;
+  color: #172026;
   cursor: pointer;
   display: block;
   float: left;
