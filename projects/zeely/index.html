@@ -39,7 +39,7 @@
                 <h3 class="multi-step__title">Как мы можем к тебе обращаться?</h3>
             </div>
             <div class="form-field">
-                <input type="text" required="required"/><span class="highlight"></span><span class="bar"></span>
+                <input type="text" required="required" autofocus autocomplete><span class="highlight"></span><span class="bar"></span>
                 <label>Твое имя</label>
             </div>
             <a class="btn btn--disable">Далее</a>
@@ -76,7 +76,7 @@
                         +132
                     </option>
                 </select>
-                <input type="tel" class="simple-input" placeholder="-- --- --">
+                <input type="tel" class="simple-input" placeholder="-- --- --" inputmode="numeric" pattern="[0-9]*" autofocus autocomplete>
             </div>
             <a class="btn btn--disable">Далее</a>
         </form>
