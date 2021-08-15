@@ -26,6 +26,7 @@ $('.btn').on('click', function(){
 
     $("#step1").hide();
     $("#step2").show();
+    $("input").focus();
     move()
 
 });
@@ -35,6 +36,7 @@ $("#start").click(function(){
     $(".begin").hide(100);
     $(".multi-step").show();
     $("#step1").show();
+    $("input").focus();
 });
 
 $('input').on('focus', function(){
