@@ -11,7 +11,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-  <title>Global Pharmacy</title>
+  	<title>Global Pharmacy</title>
 
 	<!-- star rating -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
@@ -152,15 +152,15 @@
 				  <li class="slide-menu__item"><a href="#" class="slide-menu__link">стероиды</a></li>
 				  <li class="slide-menu__item"><a href="#" class="slide-menu__link">похудение</a></li>
 				  <li class="slide-menu__item">
-						<a href="#" class="slide-menu__link">антибиотики</a>
-						<ul class="slide-menu__sublist">
-							<li class="slide-menu__item"><a href="#" class="slide-menu__link">Антибиотик один</a></li>
-							<li class="slide-menu__item"><a href="#" class="slide-menu__link">Второй антибиотик</a></li>
-							<li class="slide-menu__item"><a href="#" class="slide-menu__link">Антибиотик третий</a></li>
-							<li class="slide-menu__item"><a href="#" class="slide-menu__link">Четвертый антибиотик</a></li>
-							<li class="slide-menu__item"><a href="#" class="slide-menu__link">Пятый антибиотик</a></li>
-						</ul>
-					</li>
+					<a href="#" class="slide-menu__link">антибиотики</a>
+					<ul class="slide-menu__sublist">
+						<li class="slide-menu__item"><a href="#" class="slide-menu__link">Антибиотик один</a></li>
+						<li class="slide-menu__item"><a href="#" class="slide-menu__link">Второй антибиотик</a></li>
+						<li class="slide-menu__item"><a href="#" class="slide-menu__link">Антибиотик третий</a></li>
+						<li class="slide-menu__item"><a href="#" class="slide-menu__link">Четвертый антибиотик</a></li>
+						<li class="slide-menu__item"><a href="#" class="slide-menu__link">Пятый антибиотик</a></li>
+					</ul>
+				  </li>
 				  <li class="slide-menu__item"><a href="#" class="slide-menu__link">другие</a></li>
 				</ul>
 				<div class="slide-menu__bottom">
@@ -476,7 +476,7 @@
 							</label>
 						</div>
 						<div class="field-set__group form-floating">
-							<input type="tel" pattern="[0-9]{16}" maxlength="16" class="field-set__input w-fixed" id="" placeholder="Kreditkartennummer" required>
+							<input type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" class="field-set__input w-fixed" id="" placeholder="Kreditkartennummer" required>
 							<label for="">Kreditkartennummer *</label>
 						</div>
 
@@ -640,41 +640,8 @@
 	<script src="./js/vendor/bootstrap/bootstrap.bundle.min.js"></script>
 	<!-- end anywhere needs -->
 	
-	<!-- nice select for select -->
 	<script src="./js/vendor/nice-select/jquery.nice-select.min.js"></script>
-	<script>
-		$(document).ready(function() {
-			$('select').niceSelect();
-			$('.checkout-data-helper__button').hover(function(){
-				$('.checkout-data-helper__tooltip').toggleClass('show')
-			})
-		});
-	</script>
-	<!-- end nice select for select -->
-
-	<!-- form validation -->
-	<script>
-		(function () {
-			'use strict'
-
-			// Fetch all the forms we want to apply custom Bootstrap validation styles to
-			var forms = document.querySelectorAll('.needs-validation')
-
-			// Loop over them and prevent submission
-			Array.prototype.slice.call(forms)
-				.forEach(function (form) {
-				form.addEventListener('submit', function (event) {
-					if (!form.checkValidity()) {
-					event.preventDefault()
-					event.stopPropagation()
-					}
-
-					form.classList.add('was-validated')
-				}, false)
-			})
-		})()
-	</script>
-	<!-- end form validation -->
+	<script src="./js/checkout-page.js"></script>
 
 	<!-- star rating -->
 	<!-- <script src="https://kit.fontawesome.com/67e609cfb8.js" crossorigin="anonymous"></script>
