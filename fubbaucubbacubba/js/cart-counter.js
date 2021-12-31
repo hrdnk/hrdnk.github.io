@@ -1,14 +1,15 @@
 
 var num = document.getElementById('sub-cart__num'),
 count = 0;
-$('.add-cart').on('click', function(e){
+$('.add-cart').on('click', function(){
     count += 1;
     num.innerHTML = "" + count;
 
-    $('.sub-cart__num').addClass('pulse');
-    setTimeout(function () {
-        $('.sub-cart__num').removeClass('pulse');
-        
+    $(num).removeClass('pulse');
+    void num.offsetWidth;
+    $(num).addClass('pulse');
+    
+    setTimeout(function () {        
         if(!$(".sub-cart__button").hasClass("shadow")){
             $(".sub-cart__button").addClass("shadow");
         }

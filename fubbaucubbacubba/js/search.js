@@ -47,3 +47,31 @@ $('.sub-search__input').click(function() {
 
 });
 // end desktop search
+
+// safari scroll to top
+
+// function scrollToAnchor(aid){
+//     var aTag = $("a[name='"+ aid +"']");
+//     $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+// }
+
+// $('.footer__to-top').click(function() {
+//    scrollToAnchor('top');
+// });
+
+function scrollTo(element) {
+    window.scroll({
+      left: 0,
+      top: element.offsetTop,
+      behavior: 'smooth'
+    })
+  }
+  
+  var top = document.getElementById('top');
+  var footer = document.querySelector('.footer__to-top');
+  
+  footer.addEventListener('click', () => {
+    scrollTo(top);
+  });
+
+// end safari scroll to top
