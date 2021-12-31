@@ -1,9 +1,12 @@
 // nice select for select
     $(document).ready(function() {
         $('.card-info').niceSelect();
-        $('.checkout-data-helper__button').hover(function(e){
-            e.preventDefault();
+        $('.checkout-data-helper__button').hover(function(){
             $('.checkout-data-helper__tooltip').toggleClass('show')
+            $('.checkout-data-helper__button').on('touchstart touchend', function(e) {
+                e.preventDefault();
+                $('.checkout-data-helper__tooltip').toggleClass('show');
+            });
         })
     });
 // end nice select for select
