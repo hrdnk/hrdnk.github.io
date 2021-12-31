@@ -1,7 +1,7 @@
 // nice select for select
     $(document).ready(function() {
         $('.card-info').niceSelect();
-        $('.checkout-data-helper__button').on('hover', function(e){
+        $('.checkout-data-helper__button').on('mouseenter mouseleave touchstart touchend', function(e){
             e.preventDefault();
             $('.checkout-data-helper__tooltip').toggleClass('show');
         })
