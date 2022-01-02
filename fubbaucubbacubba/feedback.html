@@ -13,6 +13,10 @@
 	<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
   	<title>Global Pharmacy</title>
 
+	<!-- star rating -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<!-- end star rating -->
+
 	<!-- browser tab background -->
 		<meta name="msapplication-TileColor" content="#43AEED">
 		<meta name="theme-color" content="#43AEED">
@@ -149,15 +153,15 @@
 				  <li class="slide-menu__item"><a href="#" class="slide-menu__link">стероиды</a></li>
 				  <li class="slide-menu__item"><a href="#" class="slide-menu__link">похудение</a></li>
 				  <li class="slide-menu__item">
-						<a href="#" class="slide-menu__link">антибиотики</a>
-						<ul class="slide-menu__sublist">
-							<li class="slide-menu__item"><a href="#" class="slide-menu__link">Антибиотик один</a></li>
-							<li class="slide-menu__item"><a href="#" class="slide-menu__link">Второй антибиотик</a></li>
-							<li class="slide-menu__item"><a href="#" class="slide-menu__link">Антибиотик третий</a></li>
-							<li class="slide-menu__item"><a href="#" class="slide-menu__link">Четвертый антибиотик</a></li>
-							<li class="slide-menu__item"><a href="#" class="slide-menu__link">Пятый антибиотик</a></li>
-						</ul>
-					</li>
+					<a href="#" class="slide-menu__link">антибиотики</a>
+					<ul class="slide-menu__sublist">
+						<li class="slide-menu__item"><a href="#" class="slide-menu__link">Антибиотик один</a></li>
+						<li class="slide-menu__item"><a href="#" class="slide-menu__link">Второй антибиотик</a></li>
+						<li class="slide-menu__item"><a href="#" class="slide-menu__link">Антибиотик третий</a></li>
+						<li class="slide-menu__item"><a href="#" class="slide-menu__link">Четвертый антибиотик</a></li>
+						<li class="slide-menu__item"><a href="#" class="slide-menu__link">Пятый антибиотик</a></li>
+					</ul>
+				  </li>
 				  <li class="slide-menu__item"><a href="#" class="slide-menu__link">другие</a></li>
 				</ul>
 				<div class="slide-menu__bottom">
@@ -275,185 +279,39 @@
 
 	<main class="content">
 		<div class="container">
-			<section class="catalog">
-				<h1 class="section-title">Produkte</h1>
-				<div class="catalog-list">
 
-					<div class="catalog-list__item">
-						<div class="catalog-list-header">
-							<img src="./img/products/catalog/viagra.jpg" alt="" class="catalog-list-header__img">
-						</div>
-						<a href="#" class="catalog-list__name">Viagra Original 100mg</a>
-						<div class="catalog-list-footer">
-							<div class="catalog-list-price">
-								<p class="catalog-list-price__text">Beginnt um:</p>
-								<div class="catalog-list-price__num">
-									<span class="current-price">49.20 €</span>
-									<!-- <span class="old-price">55.20 €</span> -->
-								</div>
-							</div>
-							<button class="catalog-list-buy add-cart" type="button">
-								<span class="catalog-list-buy__hidden">Kaufen</span>
-								<svg height="24px" viewBox="0 -31 512.00026 512" width="24px" fill="#8B98B2" xmlns="http://www.w3.org/2000/svg">
-									<path d="m164.960938 300.003906h.023437c.019531 0 .039063-.003906.058594-.003906h271.957031c6.695312 0 12.582031-4.441406 14.421875-10.878906l60-210c1.292969-4.527344.386719-9.394532-2.445313-13.152344-2.835937-3.757812-7.269531-5.96875-11.976562-5.96875h-366.632812l-10.722657-48.253906c-1.527343-6.863282-7.613281-11.746094-14.644531-11.746094h-90c-8.285156 0-15 6.714844-15 15s6.714844 15 15 15h77.96875c1.898438 8.550781 51.3125 230.917969 54.15625 243.710938-15.941406 6.929687-27.125 22.824218-27.125 41.289062 0 24.8125 20.1875 45 45 45h272c8.285156 0 15-6.714844 15-15s-6.714844-15-15-15h-272c-8.269531 0-15-6.730469-15-15 0-8.257812 6.707031-14.976562 14.960938-14.996094zm312.152343-210.003906-51.429687 180h-248.652344l-40-180zm0 0"/>
-									<path d="m150 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0"/>
-									<path d="m362 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0"/>
-								</svg>
-							</button>
-						</div>
-					</div>
-
-					<div class="catalog-list__item">
-						<div class="catalog-list-header">
-							<img src="./img/products/catalog/cialis.jpg" alt="" class="catalog-list-header__img">
-							<span class="catalog-list-header__badge">BELIEBT</span>
-						</div>
-						<a href="#" class="catalog-list__name">Cialis 20mg</a>
-						<div class="catalog-list-footer">
-							<div class="catalog-list-price">
-								<p class="catalog-list-price__text">Beginnt um:</p>
-								<div class="catalog-list-price__num">
-									<span class="current-price">49.20 €</span>
-									<span class="old-price">55.20 €</span>
-								</div>
-							</div>
-							<button class="catalog-list-buy add-cart" type="button">
-								<span class="catalog-list-buy__hidden">Kaufen</span>
-								<svg height="24px" viewBox="0 -31 512.00026 512" width="24px" fill="#8B98B2" xmlns="http://www.w3.org/2000/svg">
-									<path d="m164.960938 300.003906h.023437c.019531 0 .039063-.003906.058594-.003906h271.957031c6.695312 0 12.582031-4.441406 14.421875-10.878906l60-210c1.292969-4.527344.386719-9.394532-2.445313-13.152344-2.835937-3.757812-7.269531-5.96875-11.976562-5.96875h-366.632812l-10.722657-48.253906c-1.527343-6.863282-7.613281-11.746094-14.644531-11.746094h-90c-8.285156 0-15 6.714844-15 15s6.714844 15 15 15h77.96875c1.898438 8.550781 51.3125 230.917969 54.15625 243.710938-15.941406 6.929687-27.125 22.824218-27.125 41.289062 0 24.8125 20.1875 45 45 45h272c8.285156 0 15-6.714844 15-15s-6.714844-15-15-15h-272c-8.269531 0-15-6.730469-15-15 0-8.257812 6.707031-14.976562 14.960938-14.996094zm312.152343-210.003906-51.429687 180h-248.652344l-40-180zm0 0"/>
-									<path d="m150 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0"/>
-									<path d="m362 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0"/>
-								</svg>
-							</button>
-						</div>
-					</div>
-
-					<div class="catalog-list__item">
-						<div class="catalog-list-header">
-							<img src="./img/products/catalog/viagra-20.jpg" alt="" class="catalog-list-header__img">
-						</div>
-						<a href="#" class="catalog-list__name">Viagra Original 20mg</a>
-						<div class="catalog-list-footer">
-							<div class="catalog-list-price">
-								<p class="catalog-list-price__text">Beginnt um:</p>
-								<div class="catalog-list-price__num">
-									<span class="current-price">49.20 €</span>
-									<!-- <span class="old-price">55.20 €</span> -->
-								</div>
-							</div>
-							<button class="catalog-list-buy add-cart" type="button">
-								<span class="catalog-list-buy__hidden">Kaufen</span>
-								<svg height="24px" viewBox="0 -31 512.00026 512" width="24px" fill="#8B98B2" xmlns="http://www.w3.org/2000/svg">
-									<path d="m164.960938 300.003906h.023437c.019531 0 .039063-.003906.058594-.003906h271.957031c6.695312 0 12.582031-4.441406 14.421875-10.878906l60-210c1.292969-4.527344.386719-9.394532-2.445313-13.152344-2.835937-3.757812-7.269531-5.96875-11.976562-5.96875h-366.632812l-10.722657-48.253906c-1.527343-6.863282-7.613281-11.746094-14.644531-11.746094h-90c-8.285156 0-15 6.714844-15 15s6.714844 15 15 15h77.96875c1.898438 8.550781 51.3125 230.917969 54.15625 243.710938-15.941406 6.929687-27.125 22.824218-27.125 41.289062 0 24.8125 20.1875 45 45 45h272c8.285156 0 15-6.714844 15-15s-6.714844-15-15-15h-272c-8.269531 0-15-6.730469-15-15 0-8.257812 6.707031-14.976562 14.960938-14.996094zm312.152343-210.003906-51.429687 180h-248.652344l-40-180zm0 0"/>
-									<path d="m150 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0"/>
-									<path d="m362 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0"/>
-								</svg>
-							</button>
-						</div>
-					</div>
-
-					<div class="catalog-list__item">
-						<div class="catalog-list-header">
-							<img src="./img/products/catalog/cialis.jpg" alt="" class="catalog-list-header__img">
-						</div>
-						<a href="#" class="catalog-list__name">Cialis 20mg</a>
-						<div class="catalog-list-footer">
-							<div class="catalog-list-price">
-								<p class="catalog-list-price__text">Beginnt um:</p>
-								<div class="catalog-list-price__num">
-									<span class="current-price">49.20 €</span>
-									<!-- <span class="old-price">55.20 €</span> -->
-								</div>
-							</div>
-							<button class="catalog-list-buy add-cart" type="button">
-								<span class="catalog-list-buy__hidden">Kaufen</span>
-								<svg height="24px" viewBox="0 -31 512.00026 512" width="24px" fill="#8B98B2" xmlns="http://www.w3.org/2000/svg">
-									<path d="m164.960938 300.003906h.023437c.019531 0 .039063-.003906.058594-.003906h271.957031c6.695312 0 12.582031-4.441406 14.421875-10.878906l60-210c1.292969-4.527344.386719-9.394532-2.445313-13.152344-2.835937-3.757812-7.269531-5.96875-11.976562-5.96875h-366.632812l-10.722657-48.253906c-1.527343-6.863282-7.613281-11.746094-14.644531-11.746094h-90c-8.285156 0-15 6.714844-15 15s6.714844 15 15 15h77.96875c1.898438 8.550781 51.3125 230.917969 54.15625 243.710938-15.941406 6.929687-27.125 22.824218-27.125 41.289062 0 24.8125 20.1875 45 45 45h272c8.285156 0 15-6.714844 15-15s-6.714844-15-15-15h-272c-8.269531 0-15-6.730469-15-15 0-8.257812 6.707031-14.976562 14.960938-14.996094zm312.152343-210.003906-51.429687 180h-248.652344l-40-180zm0 0"/>
-									<path d="m150 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0"/>
-									<path d="m362 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0"/>
-								</svg>
-							</button>
-						</div>
-					</div>
-
-					<div class="catalog-list__item">
-						<div class="catalog-list-header">
-							<img src="./img/products/catalog/cialis.jpg" alt="" class="catalog-list-header__img">
-						</div>
-						<a href="#" class="catalog-list__name">Cialis 20mg</a>
-						<div class="catalog-list-footer">
-							<div class="catalog-list-price">
-								<p class="catalog-list-price__text">Beginnt um:</p>
-								<div class="catalog-list-price__num">
-									<span class="current-price">49.20 €</span>
-									<!-- <span class="old-price">55.20 €</span> -->
-								</div>
-							</div>
-							<button class="catalog-list-buy add-cart" type="button">
-								<span class="catalog-list-buy__hidden">Kaufen</span>
-								<svg height="24px" viewBox="0 -31 512.00026 512" width="24px" fill="#8B98B2" xmlns="http://www.w3.org/2000/svg">
-									<path d="m164.960938 300.003906h.023437c.019531 0 .039063-.003906.058594-.003906h271.957031c6.695312 0 12.582031-4.441406 14.421875-10.878906l60-210c1.292969-4.527344.386719-9.394532-2.445313-13.152344-2.835937-3.757812-7.269531-5.96875-11.976562-5.96875h-366.632812l-10.722657-48.253906c-1.527343-6.863282-7.613281-11.746094-14.644531-11.746094h-90c-8.285156 0-15 6.714844-15 15s6.714844 15 15 15h77.96875c1.898438 8.550781 51.3125 230.917969 54.15625 243.710938-15.941406 6.929687-27.125 22.824218-27.125 41.289062 0 24.8125 20.1875 45 45 45h272c8.285156 0 15-6.714844 15-15s-6.714844-15-15-15h-272c-8.269531 0-15-6.730469-15-15 0-8.257812 6.707031-14.976562 14.960938-14.996094zm312.152343-210.003906-51.429687 180h-248.652344l-40-180zm0 0"/>
-									<path d="m150 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0"/>
-									<path d="m362 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0"/>
-								</svg>
-							</button>
-						</div>
-					</div>
-
-					<div class="catalog-list__item">
-						<div class="catalog-list-header">
-							<img src="./img/products/catalog/cialis.jpg" alt="" class="catalog-list-header__img">
-						</div>
-						<a href="#" class="catalog-list__name">Cialis 20mg</a>
-						<div class="catalog-list-footer">
-							<div class="catalog-list-price">
-								<p class="catalog-list-price__text">Beginnt um:</p>
-								<div class="catalog-list-price__num">
-									<span class="current-price">49.20 €</span>
-									<!-- <span class="old-price">55.20 €</span> -->
-								</div>
-							</div>
-							<button class="catalog-list-buy add-cart" type="button">
-								<span class="catalog-list-buy__hidden">Kaufen</span>
-								<svg height="24px" viewBox="0 -31 512.00026 512" width="24px" fill="#8B98B2" xmlns="http://www.w3.org/2000/svg">
-									<path d="m164.960938 300.003906h.023437c.019531 0 .039063-.003906.058594-.003906h271.957031c6.695312 0 12.582031-4.441406 14.421875-10.878906l60-210c1.292969-4.527344.386719-9.394532-2.445313-13.152344-2.835937-3.757812-7.269531-5.96875-11.976562-5.96875h-366.632812l-10.722657-48.253906c-1.527343-6.863282-7.613281-11.746094-14.644531-11.746094h-90c-8.285156 0-15 6.714844-15 15s6.714844 15 15 15h77.96875c1.898438 8.550781 51.3125 230.917969 54.15625 243.710938-15.941406 6.929687-27.125 22.824218-27.125 41.289062 0 24.8125 20.1875 45 45 45h272c8.285156 0 15-6.714844 15-15s-6.714844-15-15-15h-272c-8.269531 0-15-6.730469-15-15 0-8.257812 6.707031-14.976562 14.960938-14.996094zm312.152343-210.003906-51.429687 180h-248.652344l-40-180zm0 0"/>
-									<path d="m150 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0"/>
-									<path d="m362 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0"/>
-								</svg>
-							</button>
-						</div>
-					</div>
-
-				</div>
-			</section>
-
-			<!-- pagination block -->
-			<nav class="pagination-block" aria-label="Page navigation">
-				<ul class="pagination">
-				  <li class="pagination__item">
-					<a class="pagination__link" href="#" aria-label="Previous">
-						<svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M8.30531 1.66138C8.68696 1.28648 8.68696 0.67146 8.30531 0.29656C7.93317 -0.0690031 7.33675 -0.0690028 6.96461 0.29656L0 7.13806L6.96461 13.9796C7.33675 14.3451 7.93317 14.3451 8.30531 13.9796C8.68696 13.6047 8.68696 12.9896 8.30531 12.6147L2.73008 7.13806L8.30531 1.66138Z" fill="#C2CFE0"/>
-						</svg>
-					</a>
-				  </li>
-				  <li class="pagination__item current-page"><a class="pagination__link" href="#">1</a></li>
-				  <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
-				  <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
-				  <li class="pagination__item last-page"><a class="pagination__link" href="#">13</a></li>
-				  <li class="pagination__item">
-					<a class="pagination__link" href="#" aria-label="Next">
-						<svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M0.694691 12.6147C0.313044 12.9896 0.313044 13.6047 0.694691 13.9796C1.06683 14.3451 1.66325 14.3451 2.03539 13.9796L9 7.13806L2.03539 0.29656C1.66325 -0.0690028 1.06683 -0.0690038 0.694692 0.296559C0.313045 0.671459 0.313046 1.28648 0.694692 1.66138L6.26992 7.13806L0.694691 12.6147Z" fill="#C2CFE0"/>
-						</svg>							
-					</a>
-				  </li>
-				</ul>
-				<!-- tablet&mobile pagination button -->
-				<a href="#" class="btn-gray show-more">Смотреть больше</a>
-				<!-- end tablet&mobile pagination button -->
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb">
+				  <li class="breadcrumb-item"><a href="/">Startseite</a></li>
+				  <li class="breadcrumb-item active" aria-current="page">Kontakt</li>
+				</ol>
 			</nav>
-			<!-- end pagination block -->
+
+			<form action="" method="post" class="feedback needs-validation" novalidate>
+                <h1 class="section-title">Kontakt</h1>
+                <h2 class="feedback__subtitle">Schreiben Sie uns Ihre Fragen oder senden Sie uns eine Kundenerfahrung.</h2>
+                <div class="field-set">
+                    <div class="column">
+                        <div class="form-floating">
+                            <input type="text" class="field-set__input" id="" placeholder="Nachname" required>
+                            <label for="">Nachname *</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="email" class="field-set__input" id="" placeholder="E-Mail" required>
+                            <label for="">E-Mail *</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" class="field-set__input" id="" placeholder="Nachname">
+                            <label for="">Betreff</label>
+                        </div>
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="field-set__textarea" id="floatingTextarea" placeholder="Leave a comment here" required></textarea>
+                        <label for="floatingTextarea">Nachricht *</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn-accent btn-accent--lg">Senden</button>
+            </form>
 
 		</div>
 	</main>
@@ -528,8 +386,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="./js/vendor/bootstrap/bootstrap.bundle.min.js"></script>
 	<!-- end anywhere needs -->
-	
-	<script src="./js/cart-counter.js"></script>
+
+	<script src="./js/form-validation.js"></script>
 
 	<!-- header scripts -->
 	<script src="./js/mobile-menu/slide-menu.js"></script>

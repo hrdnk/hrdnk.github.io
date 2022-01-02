@@ -1,0 +1,41 @@
+$breadcrumb-divider: url('../img/icons/breadcrumb.svg');
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  padding: $breadcrumb-padding-y $breadcrumb-padding-x;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  font-size: 14px;
+  @include font-size($breadcrumb-font-size);
+  list-style: none;
+  background-color: $breadcrumb-bg;
+  @include border-radius($breadcrumb-border-radius);
+  @media screen and (max-width: 767px) {
+    font-size: 10px;
+  }
+  @media screen and (max-width: 991px) {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+}
+
+.breadcrumb-item {
+  color: #979CA9;
+  // The separator between breadcrumbs (by default, a forward-slash: "/")
+  + .breadcrumb-item {
+    padding-left: $breadcrumb-item-padding-x;
+    &::before {
+      position: relative;
+      bottom: 1px;
+      float: left; // Suppress inline spacings and underlining of the separator
+      padding-right: $breadcrumb-item-padding-x;
+      // color: $breadcrumb-divider-color;
+      content: escape-svg($breadcrumb-divider);
+    }
+  }
+
+  &.active {
+    color: #131313;
+  }
+}

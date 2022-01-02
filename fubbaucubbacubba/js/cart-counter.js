@@ -8,6 +8,10 @@ $('.add-cart').on('click', function(){
     $(num).removeClass('pulse');
     void num.offsetWidth;
     $(num).addClass('pulse');
+
+    if(!$(".sub-cart--active").hasClass("show")){
+        $(".sub-cart--active").addClass("show");
+    }
     
     setTimeout(function () {        
         if(!$(".sub-cart__button").hasClass("shadow")){

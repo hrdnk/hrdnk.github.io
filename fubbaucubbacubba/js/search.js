@@ -38,6 +38,7 @@ $('.sub-search__input').click(function() {
 
     $(this).on('blur', function(){
         $(this).parent().removeClass('focused');
+        $('.sub-search__result').removeClass('open');
     });
 
     if ($(this).parent().hasClass('focused')) {
@@ -45,33 +46,26 @@ $('.sub-search__input').click(function() {
         
     }
 
+    $('.sub-search__result li').each(function(){
+        $(this).attr('data-search-term', $(this).text().toLowerCase());
+        });
+        
+        $('.sub-search__input').on('keyup', function(){
+            $('.sub-search__result').addClass('open');
+        
+        var searchTerm = $(this).val().toLowerCase();
+    
+        $('.sub-search__result li').each(function(){
+    
+            if ($(this).filter('[data-search-term *= ' + searchTerm + ']').length > 0 || searchTerm.length < 1) {
+                $(this).show();
+            } else {
+                $(this).hide();
+            }
+    
+        });
+        
+    });
+
 });
 // end desktop search
-
-// safari scroll to top
-
-function scrollToAnchor(aid){
-    var aTag = $("a[name='"+ aid +"']");
-    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
-}
-
-$('.footer__to-top').click(function() {
-   scrollToAnchor('top');
-});
-
-// function scrollTo(element) {
-//     window.scroll({
-//       left: 0,
-//       top: element.offsetTop,
-//       behavior: 'smooth'
-//     })
-//   }
-  
-//   var top = document.getElementById('top');
-//   var footer = document.querySelector('.footer__to-top');
-  
-//   footer.addEventListener('click', () => {
-//     scrollTo(top);
-//   });
-
-// end safari scroll to top
