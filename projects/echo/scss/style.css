@@ -464,7 +464,7 @@ section {
 
 section.advantages::before {
   position: absolute;
-  content: url("/img/aria-talk-ill.svg");
+  content: url("../img/aria-talk-ill.svg");
   left: 130px;
   top: -130px;
   z-index: -1;
