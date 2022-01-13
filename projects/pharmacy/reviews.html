@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="icon" type="image/png" href="./favicon.png">
+	<link rel="stylesheet" href="./css/style.min.css">
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  	<title>Global Pharmacy</title>
+
+	<!-- star rating -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<!-- end star rating -->
+
+	<!-- browser tab background -->
+		<meta name="msapplication-TileColor" content="#43AEED">
+		<meta name="theme-color" content="#43AEED">
+	<!-- end browser tab background -->
+
+  <!-- description&SEO -->
+		<meta property="og:title" content="">
+		<meta property="og:description" content="">
+		<meta property="og:image" content="./img/thumbnail.png">
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="revisit-after" content="15 days">
+		<meta name="robots" content="all">
+		<meta name="rating" content="">
+  <!-- end description&SEO -->
+
+</head>
+<body>
+    
+	<header class="header" id="top">
+		<div class="container">
+			<div class="sub-menu">
+				<a href="/" class="logo">
+					<img src="./img/icons/logo.svg" alt="Global Pharmacy logotype">
+				</a>
+
+				<!-- mobile header -->
+				<div class="mobile-nav">
+					<button type="button" class="slide-menu__control slide-menu__burger" data-target="test-menu-left" data-action="toggle">
+						<img src="./img/icons/header/mobile/burger.svg" alt="mobile navigation">
+					</button>
+					<div class="mobile-search">
+						<button type="button" class="mobile-search__button">
+							<img src="./img/icons/header/mobile/search.svg" alt="">
+						</button>
+						<div class="mobile-search__panel">
+							<div class="mobile-search__control">
+								<button type="button" class="mobile-search__button">
+									<svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0.287122 6.30693L6.30691 0.287338C6.68984 -0.0957786 7.3107 -0.0957785 7.69345 0.287338C8.07622 0.670114 8.07622 1.29094 7.69345 1.67368L2.36686 7.0001L7.69329 12.3263C8.07607 12.7093 8.07607 13.33 7.69329 13.7128C7.31052 14.0957 6.68969 14.0957 6.30676 13.7128L0.286967 7.69312C0.0955791 7.50164 -6.73122e-06 7.25095 -6.71556e-06 7.00013C-6.6999e-06 6.74919 0.0957651 6.49832 0.287122 6.30693Z" fill="#ffffff"/>
+									</svg>									
+								</button>
+								<input class="mobile-search__input" type="text" placeholder="Поиск">
+							</div>
+							<ul class="mobile-search__result">
+								<li class="mobile-search__item"><a href="#" class="mobile-search__link">Cialis Generika 100mg <span class="price">52.20 €</span></a></li>
+								<li class="mobile-search__item"><a href="#" class="mobile-search__link">Cialis Generika 200mg <span class="price">52.20 €</span></a></li>
+								<li class="mobile-search__item"><a href="#" class="mobile-search__link">Cialis Generika 300mg <span class="price">52.20 €</span></a></li>
+								<li class="mobile-search__item"><a href="#" class="mobile-search__link">Cialis Generika 100mg <span class="price">52.20 €</span></a></li>
+								<li class="mobile-search__item"><a href="#" class="mobile-search__link">Cialis Generika 100mg <span class="price">52.20 €</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<a href="/" class="logo-mobile">
+					<img src="./img/icons/logo-mobile.svg" alt="Global Pharmacy logotype">
+				</a>
+				<!-- end mobile header -->
+
+				<div class="sub-search">
+					<input class="sub-search__input" type="text" placeholder="Поиск">
+					<button class="sub-search__button">
+						<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M16.5 14.3757C16.5 14.2549 16.4629 14.1582 16.3887 14.0857L14.8592 12.5788C14.785 12.5063 14.6861 12.47 14.5624 12.47H14.0429C14.6366 11.7934 15.1004 11.0321 15.4343 10.1863C15.7683 9.34045 15.9353 8.45837 15.9353 7.54003C15.9353 6.16252 15.5889 4.89981 14.8963 3.75189C14.2037 2.60397 13.2699 1.69167 12.095 1.015C10.92 0.338334 9.62758 0 8.21763 0C6.80767 0 5.51522 0.338334 4.34026 1.015C3.1653 1.69167 2.23152 2.60397 1.53891 3.75189C0.846303 4.89981 0.5 6.16252 0.5 7.54003C0.5 8.91753 0.846303 10.1802 1.53891 11.3282C2.23152 12.4761 3.1653 13.3884 4.34026 14.0651C5.51522 14.7417 6.80767 15.0801 8.21763 15.0801C9.15759 15.0801 10.0605 14.9169 10.9262 14.5907C11.792 14.2644 12.5712 13.8113 13.2638 13.2313V13.7388C13.2638 13.8355 13.3009 13.9321 13.3751 14.0288L14.9045 15.4994C14.9787 15.5961 15.0777 15.6444 15.2014 15.6444C15.325 15.6444 15.4364 15.5961 15.5353 15.4994L16.3887 14.7019C16.4629 14.6053 16.5 14.4965 16.5 14.3757ZM11.186 12.5607C10.2707 13.0803 9.28129 13.3401 8.21764 13.3401C7.15399 13.3401 6.16456 13.0803 5.24932 12.5607C4.33409 12.0411 3.61056 11.3342 3.07874 10.4401C2.54692 9.5459 2.28101 8.57923 2.28101 7.54006C2.28101 6.50089 2.54692 5.53422 3.07874 4.64005C3.61056 3.74588 4.33409 3.039 5.24932 2.51941C6.16456 1.99983 7.15399 1.74004 8.21764 1.74004C9.28129 1.74004 10.2707 1.99983 11.186 2.51941C12.1012 3.039 12.8247 3.74588 13.3565 4.64005C13.8884 5.53422 14.1543 6.50089 14.1543 7.54006C14.1543 8.57923 13.8884 9.5459 13.3565 10.4401C12.8247 11.3342 12.1012 12.0411 11.186 12.5607Z" fill="#8B98B2"/>
+						</svg>							
+					</button>
+					<ul class="sub-search__result">
+                        <li class="sub-search__item"><a href="#" class="sub-search__link">Cialis Generika 100mg <span class="price">52.20 €</span></a></li>
+                        <li class="sub-search__item"><a href="#" class="sub-search__link">Cialis Generika 200mg <span class="price">52.20 €</span></a></li>
+                        <li class="sub-search__item"><a href="#" class="sub-search__link">Cialis Generika 300mg <span class="price">52.20 €</span></a></li>
+                        <li class="sub-search__item"><a href="#" class="sub-search__link">Cialis Generika 100mg <span class="price">52.20 €</span></a></li>
+                        <li class="sub-search__item"><a href="#" class="sub-search__link">Cialis Generika 100mg <span class="price">52.20 €</span></a></li>
+                    </ul>
+				</div>
+				<ul class="sub-links">
+					<li class="sub-links__item"><a href="#">Акции</a></li>
+					<li class="sub-links__item"><a href="#">Доставка и оплата</a></li>
+					<li class="sub-links__item"><a href="#">О компании</a></li>
+					<li class="sub-links__item"><a href="#">Контакты</a></li>
+				</ul>
+				<div class="sub-cart">
+					<button class="sub-cart__button" type="button" data-bs-toggle="modal" data-bs-target="#cartModal">
+						<span class="sub-cart--active"></span>
+						<div class="sub-cart__counter">
+							<svg height="24px" viewBox="0 -31 512.00026 512" width="24px" fill="#8B98B2" xmlns="http://www.w3.org/2000/svg">
+								<path d="m164.960938 300.003906h.023437c.019531 0 .039063-.003906.058594-.003906h271.957031c6.695312 0 12.582031-4.441406 14.421875-10.878906l60-210c1.292969-4.527344.386719-9.394532-2.445313-13.152344-2.835937-3.757812-7.269531-5.96875-11.976562-5.96875h-366.632812l-10.722657-48.253906c-1.527343-6.863282-7.613281-11.746094-14.644531-11.746094h-90c-8.285156 0-15 6.714844-15 15s6.714844 15 15 15h77.96875c1.898438 8.550781 51.3125 230.917969 54.15625 243.710938-15.941406 6.929687-27.125 22.824218-27.125 41.289062 0 24.8125 20.1875 45 45 45h272c8.285156 0 15-6.714844 15-15s-6.714844-15-15-15h-272c-8.269531 0-15-6.730469-15-15 0-8.257812 6.707031-14.976562 14.960938-14.996094zm312.152343-210.003906-51.429687 180h-248.652344l-40-180zm0 0"/>
+								<path d="m150 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0"/>
+								<path d="m362 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0"/>
+							</svg>
+							<span class="sub-cart__num" id="sub-cart__num">0</span>
+						</div>
+						<span class="sub-cart__name">Корзина</span>
+					</button>
+				</div>
+			</div>
+
+			<!-- desktop navigation -->
+			<nav class="nav-menu" role="navigation">
+				<div class="nav-menu__item dropdown">
+					<a href="#" class="nav-menu__link dropdown-link" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">потенция</a>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+						<li><a class="dropdown-item" href="#">Viagra Generika</a></li>
+						<li><a class="dropdown-item" href="#">Viagra Professional</a></li>
+						<li><a class="dropdown-item" href="#">Viagra Super Active</a></li>
+					</ul>
+				</div>
+				<div class="nav-menu__item">
+					<a href="#" class="nav-menu__link">стероиды</a>
+				</div>
+				<div class="nav-menu__item">
+					<a href="#" class="nav-menu__link">похудение</a>
+				</div>
+				<div class="nav-menu__item">
+					<a href="#" class="nav-menu__link">антибиотики</a>
+				</div>
+				<div class="nav-menu__item">
+					<a href="#" class="nav-menu__link">другие</a>
+				</div>
+			</nav>
+			<!-- end desktop navigation -->
+
+			<!-- mobile slide menu -->
+			<nav class="slide-menu" id="test-menu-left">
+				<div class="slide-menu__header">
+				  <img src="./img/icons/logo.svg" alt="" class="slide-menu__logo">
+				  <button type="button" class="slide-menu__control slide-menu__burger" data-action="close">
+					  <img src="./img/icons/header/mobile/close.svg" alt="">
+				  </button>
+				</div>
+				<ul class="slide-menu__list">
+				  <li class="slide-menu__item">
+					<a href="#" class="slide-menu__link">потенция</a>
+					<ul class="slide-menu__sublist">
+						<li class="slide-menu__item"><a href="#" class="slide-menu__link">Viagra Generika</a></li>
+						<li class="slide-menu__item"><a href="#" class="slide-menu__link">Viagra Professional</a></li>
+						<li class="slide-menu__item"><a href="#" class="slide-menu__link">Viagra Super Active</a></li>
+					</ul>
+				  </li>
+				  <li class="slide-menu__item"><a href="#" class="slide-menu__link">стероиды</a></li>
+				  <li class="slide-menu__item"><a href="#" class="slide-menu__link">похудение</a></li>
+				  <li class="slide-menu__item">
+						<a href="#" class="slide-menu__link">антибиотики</a>
+						<ul class="slide-menu__sublist">
+							<li class="slide-menu__item"><a href="#" class="slide-menu__link">Антибиотик один</a></li>
+							<li class="slide-menu__item"><a href="#" class="slide-menu__link">Второй антибиотик</a></li>
+							<li class="slide-menu__item"><a href="#" class="slide-menu__link">Антибиотик третий</a></li>
+							<li class="slide-menu__item"><a href="#" class="slide-menu__link">Четвертый антибиотик</a></li>
+							<li class="slide-menu__item"><a href="#" class="slide-menu__link">Пятый антибиотик</a></li>
+						</ul>
+					</li>
+				  <li class="slide-menu__item"><a href="#" class="slide-menu__link">другие</a></li>
+				</ul>
+				<div class="slide-menu__bottom">
+					<ul class="slide-links">
+						<li class="slide-links__item"><a href="#">Акции</a></li>
+						<li class="slide-links__item"><a href="#">Доставка и оплата</a></li>
+						<li class="slide-links__item"><a href="#">О компании</a></li>
+						<li class="slide-links__item"><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+			</nav>
+			<!-- end mobile slide menu -->
+
+			<!-- cart modal -->
+			<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+				
+				<!-- add class .modal-dialog-scrollable to .modal-dialog for scrolling content in box, height modal when many content, long modal -->
+				<div class="modal-dialog modal-dialog-centered modal-lg">
+				  
+				  <!-- if cart empty add classes .empty to .modal-cart, default need .empty -->
+				  <div class="modal-content modal-cart">
+					<div class="modal-header">
+					  <h5 class="modal-title" id="cartModalLabel">Корзина</h5>
+					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+
+					<div class="modal-body">
+
+						<div class="cart-empty">
+							<p class="cart-empty__notification">Ваша корзина пуста</p>
+						</div>
+
+					  <div class="modal-cart-list">
+						  <div class="modal-cart-list__item">
+								<div class="modal-cart-list__product">
+									<img src="./img/products/catalog/viagra.jpg" alt="product" class="modal-cart-list__img">
+									<div class="modal-cart-list-column">
+										<p class="modal-cart-list__name">Viagra Generika</p>
+										<p class="modal-cart-list__dosage">25mg x 4 Pillen</p>
+									</div>
+								</div>
+								<div class="modal-cart-list__sum">
+									<p class="modal-cart-list__price">19.56 €</p>
+									<div class="modal-cart-list__sum-change">
+										<button class="btn-sum btn-sum__remove" type="button">
+											<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M12.667 8.66668H3.33366C3.15685 8.66668 2.98728 8.59644 2.86225 8.47141C2.73723 8.34639 2.66699 8.17682 2.66699 8.00001C2.66699 7.8232 2.73723 7.65363 2.86225 7.52861C2.98728 7.40358 3.15685 7.33334 3.33366 7.33334H12.667C12.8438 7.33334 13.0134 7.40358 13.1384 7.52861C13.2634 7.65363 13.3337 7.8232 13.3337 8.00001C13.3337 8.17682 13.2634 8.34639 13.1384 8.47141C13.0134 8.59644 12.8438 8.66668 12.667 8.66668Z" fill="#979CA9"/>
+											</svg>												
+										</button>
+										<span class="state-sum">100</span>
+										<button class="btn-sum btn-sum__add" type="button">
+											<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M12.667 7.33332H8.66699V3.33332C8.66699 3.15651 8.59675 2.98694 8.47173 2.86192C8.34671 2.73689 8.17714 2.66666 8.00033 2.66666C7.82351 2.66666 7.65394 2.73689 7.52892 2.86192C7.4039 2.98694 7.33366 3.15651 7.33366 3.33332V7.33332H3.33366C3.15685 7.33332 2.98728 7.40356 2.86225 7.52858C2.73723 7.65361 2.66699 7.82318 2.66699 7.99999C2.66699 8.1768 2.73723 8.34637 2.86225 8.47139C2.98728 8.59642 3.15685 8.66666 3.33366 8.66666H7.33366V12.6667C7.33366 12.8435 7.4039 13.013 7.52892 13.1381C7.65394 13.2631 7.82351 13.3333 8.00033 13.3333C8.17714 13.3333 8.34671 13.2631 8.47173 13.1381C8.59675 13.013 8.66699 12.8435 8.66699 12.6667V8.66666H12.667C12.8438 8.66666 13.0134 8.59642 13.1384 8.47139C13.2634 8.34637 13.3337 8.1768 13.3337 7.99999C13.3337 7.82318 13.2634 7.65361 13.1384 7.52858C13.0134 7.40356 12.8438 7.33332 12.667 7.33332Z" fill="#979CA9"/>
+											</svg>												
+										</button>
+									</div>
+									<p class="modal-cart-list__total-price">19.56 €</p>
+								</div>
+								<button type="button" class="modal-cart-list__remove">
+									<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M2.33333 2.91669H4.08333V2.33335C4.08333 2.02393 4.20625 1.72719 4.42504 1.5084C4.64383 1.2896 4.94058 1.16669 5.25 1.16669H8.75C9.05942 1.16669 9.35616 1.2896 9.57496 1.5084C9.79375 1.72719 9.91667 2.02393 9.91667 2.33335V2.91669H11.6667C11.8214 2.91669 11.9697 2.97815 12.0791 3.08754C12.1885 3.19694 12.25 3.34531 12.25 3.50002C12.25 3.65473 12.1885 3.8031 12.0791 3.9125C11.9697 4.0219 11.8214 4.08335 11.6667 4.08335H11.0833V11.6667C11.0833 11.9761 10.9604 12.2729 10.7416 12.4916C10.5228 12.7104 10.2261 12.8334 9.91667 12.8334H4.08333C3.77391 12.8334 3.47717 12.7104 3.25838 12.4916C3.03958 12.2729 2.91667 11.9761 2.91667 11.6667V4.08335H2.33333C2.17862 4.08335 2.03025 4.0219 1.92085 3.9125C1.81146 3.8031 1.75 3.65473 1.75 3.50002C1.75 3.34531 1.81146 3.19694 1.92085 3.08754C2.03025 2.97815 2.17862 2.91669 2.33333 2.91669ZM4.08333 4.08335V11.6667H9.91667V4.08335H4.08333ZM5.25 2.91669H8.75V2.33335H5.25V2.91669ZM5.25 5.25002H6.41667V10.5H5.25V5.25002ZM7.58333 5.25002H8.75V10.5H7.58333V5.25002Z" fill="#979CA9"/>
+									</svg>
+								</button>
+						  </div>
+							<div class="modal-cart-list__item">
+								<div class="modal-cart-list__product">
+									<img src="./img/products/catalog/cialis.jpg" alt="product" class="modal-cart-list__img">
+									<div class="modal-cart-list-column">
+										<p class="modal-cart-list__name">Cialis</p>
+										<p class="modal-cart-list__dosage">20mg x 4 Pillen</p>
+									</div>
+								</div>
+								<div class="modal-cart-list__sum">
+									<p class="modal-cart-list__price">14.20 €</p>
+									<div class="modal-cart-list__sum-change">
+										<button class="btn-sum btn-sum__remove" type="button">
+											<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M12.667 8.66668H3.33366C3.15685 8.66668 2.98728 8.59644 2.86225 8.47141C2.73723 8.34639 2.66699 8.17682 2.66699 8.00001C2.66699 7.8232 2.73723 7.65363 2.86225 7.52861C2.98728 7.40358 3.15685 7.33334 3.33366 7.33334H12.667C12.8438 7.33334 13.0134 7.40358 13.1384 7.52861C13.2634 7.65363 13.3337 7.8232 13.3337 8.00001C13.3337 8.17682 13.2634 8.34639 13.1384 8.47141C13.0134 8.59644 12.8438 8.66668 12.667 8.66668Z" fill="#979CA9"/>
+											</svg>												
+										</button>
+										<span class="state-sum">9</span>
+										<button class="btn-sum btn-sum__add" type="button">
+											<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M12.667 7.33332H8.66699V3.33332C8.66699 3.15651 8.59675 2.98694 8.47173 2.86192C8.34671 2.73689 8.17714 2.66666 8.00033 2.66666C7.82351 2.66666 7.65394 2.73689 7.52892 2.86192C7.4039 2.98694 7.33366 3.15651 7.33366 3.33332V7.33332H3.33366C3.15685 7.33332 2.98728 7.40356 2.86225 7.52858C2.73723 7.65361 2.66699 7.82318 2.66699 7.99999C2.66699 8.1768 2.73723 8.34637 2.86225 8.47139C2.98728 8.59642 3.15685 8.66666 3.33366 8.66666H7.33366V12.6667C7.33366 12.8435 7.4039 13.013 7.52892 13.1381C7.65394 13.2631 7.82351 13.3333 8.00033 13.3333C8.17714 13.3333 8.34671 13.2631 8.47173 13.1381C8.59675 13.013 8.66699 12.8435 8.66699 12.6667V8.66666H12.667C12.8438 8.66666 13.0134 8.59642 13.1384 8.47139C13.2634 8.34637 13.3337 8.1768 13.3337 7.99999C13.3337 7.82318 13.2634 7.65361 13.1384 7.52858C13.0134 7.40356 12.8438 7.33332 12.667 7.33332Z" fill="#979CA9"/>
+											</svg>												
+										</button>
+									</div>
+									<p class="modal-cart-list__total-price">28.40 €</p>
+								</div>
+								<button type="button" class="modal-cart-list__remove">
+									<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M2.33333 2.91669H4.08333V2.33335C4.08333 2.02393 4.20625 1.72719 4.42504 1.5084C4.64383 1.2896 4.94058 1.16669 5.25 1.16669H8.75C9.05942 1.16669 9.35616 1.2896 9.57496 1.5084C9.79375 1.72719 9.91667 2.02393 9.91667 2.33335V2.91669H11.6667C11.8214 2.91669 11.9697 2.97815 12.0791 3.08754C12.1885 3.19694 12.25 3.34531 12.25 3.50002C12.25 3.65473 12.1885 3.8031 12.0791 3.9125C11.9697 4.0219 11.8214 4.08335 11.6667 4.08335H11.0833V11.6667C11.0833 11.9761 10.9604 12.2729 10.7416 12.4916C10.5228 12.7104 10.2261 12.8334 9.91667 12.8334H4.08333C3.77391 12.8334 3.47717 12.7104 3.25838 12.4916C3.03958 12.2729 2.91667 11.9761 2.91667 11.6667V4.08335H2.33333C2.17862 4.08335 2.03025 4.0219 1.92085 3.9125C1.81146 3.8031 1.75 3.65473 1.75 3.50002C1.75 3.34531 1.81146 3.19694 1.92085 3.08754C2.03025 2.97815 2.17862 2.91669 2.33333 2.91669ZM4.08333 4.08335V11.6667H9.91667V4.08335H4.08333ZM5.25 2.91669H8.75V2.33335H5.25V2.91669ZM5.25 5.25002H6.41667V10.5H5.25V5.25002ZM7.58333 5.25002H8.75V10.5H7.58333V5.25002Z" fill="#979CA9"/>
+									</svg>
+								</button>
+						  </div>
+					  </div>
+					</div>
+					<div class="modal-footer cart-padding">
+					  <button type="button" class="btn-link btn-back" data-bs-dismiss="modal">Продолжить покупки</button>
+					  <div class="modal-footer-info">
+						<div class="modal-footer-total">
+							<p class="modal-footer-total__text">Итого:</p>
+							<p class="modal-footer-total__sum">14.20 €</p>
+						</div>
+						<a href="#" class="btn-accent">Оформить заказ</a>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			</div>
+			<!-- end cart modal -->
+
+		</div>
+	</header>
+
+	<!-- review modal -->
+	<div class="modal fade" id="reviewModal" tabindex="-1" aria-labelledby="reviewModalLabel" aria-hidden="true">
+	
+		<div class="modal-dialog modal-dialog-centered modal-sm">
+			<div class="modal-content modal-review">
+				<form action="" method="post">
+					<div class="modal-header">
+						<h5 class="modal-title" id="reviewModalLabel">Оставить отзыв</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+
+					<div class="modal-body">
+						<div class="field-set">
+							<p class="field-set__title field-set__title--rating">Ваша оценка</p>
+							<div class="rating">
+								<span class="far fa-star" data-rating="1"></span>
+								<span class="far fa-star" data-rating="2"></span>
+								<span class="far fa-star" data-rating="3"></span>
+								<span class="far fa-star" data-rating="4"></span>
+								<span class="far fa-star" data-rating="5"></span>
+								<input type="hidden" class="rating-value" value="5">
+							</div>
+						</div>
+						<div class="field-set">
+							<label for="" class="field-set__title">Ваше имя</label>
+							<input type="text" class="field-set__input" required>
+						</div>
+						<div class="field-set">
+							<label for="review-comment" class="field-set__title">Ваш отзыв</label>
+							<textarea class="field-set__textarea" id="review-comment" rows="6" required></textarea>
+						</div>
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn-link btn-link--default btn-link--modal" data-bs-dismiss="modal">Отмена</button>
+						<button type="submit" data-bs-target="#thanksReviewModal" data-bs-toggle="modal" class="btn-accent">Оставить отзыв</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- end review modal -->
+
+	<!-- replay review modal -->
+	<div class="modal fade" id="replyReviewModal" tabindex="-1" aria-labelledby="replyReviewModalLabel" aria-hidden="true">
+
+		<div class="modal-dialog modal-dialog-centered modal-sm">
+			<div class="modal-content modal-review">
+				<form action="" method="post">
+					<div class="modal-header">
+						<h5 class="modal-title" id="replyReviewModalLabel">Ответить на отзыв</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+
+					<div class="modal-body">
+						<div class="field-set">
+							<label for="" class="field-set__title">Ваше имя</label>
+							<input type="text" class="field-set__input" required>
+						</div>
+						<div class="field-set">
+							<label for="review-comment" class="field-set__title">Ваш отзыв</label>
+							<textarea class="field-set__textarea" id="review-comment" rows="6" required></textarea>
+						</div>
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn-link btn-link--default btn-link--modal" data-bs-dismiss="modal">Отмена</button>
+						<button type="submit" data-bs-target="#thanksReviewModal" data-bs-toggle="modal" class="btn-accent">Оставить отзыв</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+	</div>
+	<!-- end replay review modal -->
+
+	<!-- thanks success modal -->
+
+	<div class="modal fade" id="thanksReviewModal" tabindex="-1" aria-labelledby="thanksReviewModalLabel" aria-hidden="true">
+
+		<div class="modal-dialog modal-dialog-centered modal-sm">
+			<div class="modal-content modal-success">
+				<div class="modal-header">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+
+				<div class="modal-body">
+					<img src="./img/icons/modal-success.svg" alt="" class="modal-success__img">
+					<p class="modal-success__title">Спасибо за отзыв</p>
+				</div>
+
+			</div>
+		</div>
+		
+	</div>
+
+	<!-- end thanks success modal -->
+
+	<main class="content">
+		<div class="container">
+
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb">
+				  <li class="breadcrumb-item"><a href="/">Startseite</a></li>
+				  <li class="breadcrumb-item active" aria-current="page">Kundenerfahrungen</li>
+				</ol>
+			</nav>
+
+            <!-- if comments none add classes .empty to .reviews, default need .empty -->
+			<section class="reviews">
+                <h1 class="section-title">Kundenerfahrungen</h1>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#reviewModal" class="btn-outline-accent mx-auto">Feedback geben</button>
+
+                <div class="reviews-empty">
+                    <p class="reviews-empty__notification">Напишите первый комментарий</p>
+                </div>
+
+                <div class="reviews-list">
+                    <div class="reviews__item">
+                        <div class="reviews-header">
+                            <p class="reviews__name">Ulrich W.</p>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#replyReviewModal" class="reviews__reply">Antworten</button>
+                            <p class="reviews__date">21.04.2021</p>
+                        </div>
+                        <div class="product__rating disabled">
+                            <span class="far fa-star" data-rating="1"></span>
+                            <span class="far fa-star" data-rating="2"></span>
+                            <span class="far fa-star" data-rating="3"></span>
+                            <span class="far fa-star" data-rating="4"></span>
+                            <span class="far fa-star" data-rating="5"></span>
+                            <input type="hidden" class="rating-value" value="3">
+                        </div>
+                        <p class="reviews__comment">Ware gut verpackt. Qualität sehr gut. Rundum zufrieden. Gerne wieder.</p>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews-header">
+                            <p class="reviews__name">Peter V.</p>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#replyReviewModal" class="reviews__reply">Antworten</button>
+                            <p class="reviews__date">21.04.2021</p>
+                        </div>
+                        <div class="product__rating disabled">
+                            <span class="far fa-star" data-rating="1"></span>
+                            <span class="far fa-star" data-rating="2"></span>
+                            <span class="far fa-star" data-rating="3"></span>
+                            <span class="far fa-star" data-rating="4"></span>
+                            <span class="far fa-star" data-rating="5"></span>
+                            <input type="hidden" class="rating-value" value="2">
+                        </div>
+                        <p class="reviews__comment">Schon das 3. Mal bestellt. Immer alles tutti und Ware ist einwandfrei!</p>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews-header">
+                            <p class="reviews__name">Klaus N.</p>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#replyReviewModal" class="reviews__reply">Antworten</button>
+                            <p class="reviews__date">21.04.2021</p>
+                        </div>
+                        <div class="product__rating disabled">
+                            <span class="far fa-star" data-rating="1"></span>
+                            <span class="far fa-star" data-rating="2"></span>
+                            <span class="far fa-star" data-rating="3"></span>
+                            <span class="far fa-star" data-rating="4"></span>
+                            <span class="far fa-star" data-rating="5"></span>
+                            <input type="hidden" class="rating-value" value="1">
+                        </div>
+                        <p class="reviews__comment">Alles toll, kam sehr schnell. Bin zufrieden wie immer. War nicht das letzte Mal. Danke.</p>
+                    </div>
+                </div>
+
+			</section>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-4 col-lg-2 footer-logo">
+					<a href="/" class="footer-logo__link">
+						<img class="footer-logo__img" src="./img/icons/footer/logo-footer.svg" alt="Global Pharmacy logotype">
+					</a>
+					<p class="footer-text">2021 &copy; TOP Pharmacy<br>Alle Rechte vorbehalten</p>
+				</div>
+				<div class="col-6 col-sm-4 col-lg-2">
+					<p class="footer-title">Потенция</p>
+					<ul class="footer-list">
+						<li class="footer-list__item"><a href="" class="footer-list__link">Viagra</a></li>
+						<li class="footer-list__item"><a href="" class="footer-list__link">Cialis</a></li>
+						<li class="footer-list__item"><a href="" class="footer-list__link">Kamagra</a></li>
+						<li class="footer-list__item"><a href="" class="footer-list__link">Levitra</a></li>
+					</ul>
+				</div>
+				<div class="col-6 col-sm-4 col-lg-2">
+					<p class="footer-title">Стероиды</p>
+					<ul class="footer-list">
+						<li class="footer-list__item"><a href="" class="footer-list__link">So bestellen</a></li>
+						<li class="footer-list__item"><a href="" class="footer-list__link">Zahlung</a></li>
+						<li class="footer-list__item"><a href="" class="footer-list__link">Lieferung</a></li>
+						<li class="footer-list__item"><a href="" class="footer-list__link">Kaufretour</a></li>
+					</ul>
+				</div>
+				<div class="col-6 col-sm-4 col-lg-2">
+					<p class="footer-title">Похудение</p>
+					<ul class="footer-list">
+						<li class="footer-list__item"><a href="" class="footer-list__link">Антибиотик один</a></li>
+						<li class="footer-list__item"><a href="" class="footer-list__link">Второй антибиотик</a></li>
+						<li class="footer-list__item"><a href="" class="footer-list__link">Антибиотик третий</a></li>
+						<li class="footer-list__item"><a href="" class="footer-list__link">Антибиотик 4</a></li>
+					</ul>
+				</div>
+				<div class="col-6 col-sm-4 col-lg-2">
+					<p class="footer-title">Антибиотики</p>
+					<ul class="footer-list">
+						<li class="footer-list__item"><a href="" class="footer-list__link">Антибиотик один</a></li>
+						<li class="footer-list__item"><a href="" class="footer-list__link">Второй антибиотик</a></li>
+						<li class="footer-list__item"><a href="" class="footer-list__link">Антибиотик третий</a></li>
+						<li class="footer-list__item"><a href="" class="footer-list__link">Антибиотик 4</a></li>
+					</ul>
+				</div>
+				<div class="col-6 col-sm-4 col-lg-2">
+					<p class="footer-title">Другие</p>
+					<ul class="footer-list">
+						<li class="footer-list__item"><a href="" class="footer-list__link">Антибиотик один</a></li>
+						<li class="footer-list__item"><a href="" class="footer-list__link">Второй антибиотик</a></li>
+						<li class="footer-list__item"><a href="" class="footer-list__link">Антибиотик третий</a></li>
+						<li class="footer-list__item"><a href="" class="footer-list__link">Антибиотик 4</a></li>
+					</ul>
+				</div>
+			</div>
+			<a href="#top" class="footer__to-top">
+				<img src="./img/icons/footer/to-top.svg" alt="back to top">
+			</a>
+		</div>
+	</footer>
+
+	<section class="payment-list">
+		<img class="payment-list__img" src="./img/icons/footer/footer-pay-list.svg" alt="payment list">
+	</section>
+
+	<!-- scripts -->
+	<!-- anywhere needs -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="./js/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+	<!-- end anywhere needs -->
+	
+	<script src="./js/cart-counter.js"></script>
+
+	<!-- star rating -->
+	<script src="https://kit.fontawesome.com/67e609cfb8.js" crossorigin="anonymous"></script>
+	<script src="./js/star-rating.js"></script>
+	<!-- end star rating -->
+
+	<!-- header scripts -->
+	<script src="./js/mobile-menu/slide-menu.js"></script>
+	<script src="./js/mobile-menu/slide-menu-init.js"></script>
+	<script src="./js/search.js"></script>
+	<script src="./js/button-sum-increment.js"></script>
+	<!-- end header scripts -->
+	<!-- end scripts -->
+
+</body>
+</html>
